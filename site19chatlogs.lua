@@ -59,6 +59,10 @@
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠉⠙⠛⠛⠛⠛⠛⠛⠿⠟⠛⠛⠛⠋⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ]]
 
+if game.CoreGui:FindFirstChild("ChatLog") then
+	error("already running lel.");
+end
+
 local ChatLog = Instance.new("ScreenGui")
 local Top = Instance.new("Frame")
 local Title = Instance.new("TextLabel")
