@@ -1,4 +1,5 @@
 -- CREATED BY WHIZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
+-- fixed radioframe
 --[[
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣤⣤⣶⣶⣶⣶⣤⣤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⣾⣿⢿⣻⣿⣽⣯⣿⢯⣿⣟⣿⡿⣷⣦⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -183,7 +184,7 @@ RadioFrame.Name = "RadioFrame"
 RadioFrame.Parent = Main
 RadioFrame.Active = true
 RadioFrame.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
-WorldFrame.AutomaticCanvasSize = Enum.AutomaticSize.Y
+RadioFrame.AutomaticCanvasSize = Enum.AutomaticSize.Y
 RadioFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 RadioFrame.BorderSizePixel = 0
 RadioFrame.Position = UDim2.new(0.0303030312, 0, 0.0343347639, 0)
