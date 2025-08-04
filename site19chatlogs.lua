@@ -222,13 +222,15 @@ local function message(plr : Player, msg : string?)
 end
 
 for _,v in pairs(game:GetService("Players"):GetChildren()) do
-	v.Chatted:Connect(function(msg)
-		message(v, msg)
-	end)
+	if v ~= game.Players.LocalPlayer then
+		v.Chatted:Connect(function(msg)
+			message(v, msg)
+		end)
+	end
 end
 
 game:GetService("Players").ChildAdded:Connect(function(plr)
-	if plr:IsA("Player") then
+	if plr:IsA("Player") and plr ~= game.Players.LocalPlayer then
 		plr.Chatted:Connect(function(msg)
 			message(plr, msg)
 		end)
