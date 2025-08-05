@@ -2,6 +2,10 @@
 -- :)
 
 -- hi site 19
+-- made by whiz
+-- :)
+
+-- hi site 19
 local Players : Players = game:GetService("Players");
 local localPlayer : Player = Players.LocalPlayer;
 local scp_group: number = 3895837;
@@ -51,6 +55,8 @@ local function resetHighlights()
 		end
 	end
 end
+
+resetHighlights();
 
 game.Players.LocalPlayer:GetPropertyChangedSignal("Team"):Connect(function()
 	resetHighlights()
