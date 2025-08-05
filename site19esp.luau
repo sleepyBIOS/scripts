@@ -4,7 +4,7 @@
 -- hi site 19
 local Players : Players = game:GetService("Players");
 local localPlayer : Player = Players.LocalPlayer;
-local group: number = 3895837;
+local scp_group: number = 3895837;
 
 local function createHighlight(plr : Player)
 	if localPlayer.Team == plr.Team then
@@ -19,8 +19,7 @@ local function createHighlight(plr : Player)
 	local highlight = Instance.new("Highlight");
 	highlight.FillColor = plr.TeamColor.Color;
 	highlight.Parent = plr.Character;
-	if plr:IsInGroup(group) and plr:GetRankInGroup(group) > 8  then
-    -- mod detection (detected.) :cold:
+	if plr:IsInGroup(scp_group) and plr:GetRankInGroup(scp_group) > 8  then
 		local BillboardGui = Instance.new("BillboardGui")
 		local ImageLabel = Instance.new("ImageLabel")
 
@@ -64,7 +63,10 @@ end)
 
 for _,v in pairs(Players:GetChildren()) do
 	if v ~= localPlayer then
-		createHighlight(v);
+        createHighlight(v);
+		v.CharacterAdded:Connect(function()
+			createHighlight(v);
+		end)
 	end
 end
 
