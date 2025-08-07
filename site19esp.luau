@@ -14,6 +14,12 @@ local function createHighlight(plr : Player)
 	if localPlayer.Team == plr.Team then
 		return;
 	end
+	if plr == nil then
+		return
+	end
+	if plr.Character == nil then
+		return
+	end
 	if plr.Character:FindFirstChildOfClass("Highlight") then
 		return;
 	end
