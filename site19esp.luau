@@ -1,11 +1,7 @@
 -- made by whiz
 -- :)
+-- get out of my script u skid
 
--- hi site 19
--- made by whiz
--- :)
-
--- hi site 19
 local Players : Players = game:GetService("Players");
 local localPlayer : Player = Players.LocalPlayer;
 local scp_group: number = 3895837;
